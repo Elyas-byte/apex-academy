@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('image-sample (9).jpg')] scroll-mt-20 bg-cover bg-center h-screen flex items-center justify-center text-white"
+      className="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('image-hero-sample.jpg')] scroll-mt-20 bg-cover bg-center h-screen flex items-center justify-center text-white"
     >
       <div className="text-center px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Master the Art of </h1><h1 className="text-5xl md:text-6xl font-bold mb-4 text-blue-600">Jiu Jitsu</h1>
