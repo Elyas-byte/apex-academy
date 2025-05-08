@@ -5,6 +5,7 @@ import { useRef } from 'react';
 export default function RegistrationForm() {
     const form = useRef();
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const validate = (formData) => {
         const newErrors = {};
@@ -24,7 +25,7 @@ export default function RegistrationForm() {
             cpr: form.current.cpr.value,
             experience: form.current.experience.value
         };
-        
+
         const validationErrors = validate(formData);
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
@@ -39,22 +40,26 @@ export default function RegistrationForm() {
             CPR: ${formData.cpr}
             Experience Level: ${formData.experience === 'junior' ? 'Junior (7-17 years)' : 'Adult (18+)'}
         `;
-    
+        setLoading(true);
         emailjs.send(
             'service_mvk5jus',
             'template_ea5sw6p',
             { message },
             'maULo2qcCGKkHguaP'
         )
-        .then(() => {
-            alert(`Thanks for registering, ${formData.name}! We've sent your details.`);
-            form.current.reset();
-            setErrors({});
-        })
-        .catch((error) => {
-            alert('Something went wrong. Please try again.');
-            console.error('EmailJS Error:', error);
-        });
+            .then(() => {
+                alert(`Thanks for registering, ${formData.name}! We've sent your details.`);
+                form.current.reset();
+                setErrors({});
+            })
+            .catch((error) => {
+                alert('Something went wrong. Please try again.');
+                console.error('EmailJS Error:', error);
+            })
+            .finally(() => {
+                setLoading(false);
+            });
+
     };
 
     return (
@@ -100,9 +105,17 @@ export default function RegistrationForm() {
                     />
                     <button
                         type="submit"
-                        className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded transition"
+                        disabled={loading}
+                        className={`w-full flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded transition ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
                     >
-                        Submit Registration
+                        {loading && (
+                            <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                            </svg>
+                        )}
+                        {loading ? 'Sending...' : 'Submit Registration'}
+
                     </button>
                 </form>
             </div>
