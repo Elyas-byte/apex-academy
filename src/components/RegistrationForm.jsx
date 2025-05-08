@@ -41,7 +41,7 @@ export default function RegistrationForm() {
         `;
     
         emailjs.send(
-            'service_vy56tck',
+            'service_mvk5jus',
             'template_ea5sw6p',
             { message },
             'maULo2qcCGKkHguaP'
