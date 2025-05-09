@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const belts = [
   {
-    title: "White Belt – Serious Play",
+    title: "⚪ White Belt – Serious Play",
     sections: {
       Learn: [
         "Four major positions",
-        "Mount (Offensive/Offensive)",
-        "Side Control (Offensive/Offensive)",
+        "Mount (Defensive/Offensive)",
+        "Side Control (Defensive/Offensive)",
         "Guard (Defensive/Offensive)",
         "Back (Defensive/Offensive)",
         "No ego Sparring",
@@ -39,7 +39,7 @@ const belts = [
     },
   },
   {
-    title: "Blue Belt – Skilled",
+    title: "🔵 Blue Belt – Skilled",
     sections: {
       "What to Master": [
         "50 techniques demonstrated",
@@ -55,7 +55,7 @@ const belts = [
     },
   },
   {
-    title: "Purple Belt – Advanced Learner",
+    title: "🟣 Purple Belt – Advanced Learner",
     sections: {
       Fluidity: [
         "Smooth transitions",
@@ -68,21 +68,21 @@ const belts = [
     },
   },
   {
-    title: "Brown Belt – Teaching & Pressure",
+    title: "🟤 Brown Belt – Teaching & Pressure",
     sections: {
       Skills: [
         "Apply strong pressure",
         "Play more guard, focus on chokes",
         "Start mentoring lower belts",
-        "Focus student basics (hip movement, etc.)",
+        "Focus on student basics (hip movement, etc.)",
       ],
     },
   },
   {
-    title: "Black Belt – Mastery",
+    title: "⚫ Black Belt – Mastery",
     sections: {
       Mastery: [
-        "Simplify game to max effect, min effort",
+        "Simplify your Jiu Jitsu game to max effect with min effort",
         "Calm defense – do almost nothing",
         "Perfect setups, funnel opponents",
         "Symphony of execution",
@@ -91,6 +91,7 @@ const belts = [
     },
   },
 ];
+
 
 const BeltJourney = () => {
   const [active, setActive] = React.useState(null);
