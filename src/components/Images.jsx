@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-    'image-sample (1).jpg',
-    'image-sample (2).jpg',
-    'image-sample (3).jpg',
-    'image-sample (4).jpg',
-    'image-sample (5).jpg',
-    'image-sample (6).jpg',
-    'image-sample (7).jpg',
-    'image-sample (8).jpg',
+    'image-hero.jpg',
+    'image (1).jpg',
+    'image (2).jpg',
+    'image (3).jpg',
 ];
 
 function ImageScroller() {
