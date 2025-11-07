@@ -17,6 +17,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
           <li><a href="#home" className="hover:text-yellow-400">Home</a></li>
           <li><a href="#about" className="hover:text-yellow-400">About</a></li>
           <li><a href="#journey" className="hover:text-yellow-400">Journey</a></li>
+          <li><a href="#coaches" className="hover:text-yellow-400">Coaches</a></li>
           <li><a href="#register" className="hover:text-yellow-400">Register Now</a></li>
         </ul>
 
@@ -29,6 +30,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
           <li><a href="#home" className="hover:text-yellow-400">Home</a></li>
           <li><a href="#about" className="hover:text-yellow-400">About</a></li>
           <li><a href="#journey" className="hover:text-yellow-400">Journey</a></li>
+          <li><a href="#coaches" className="hover:text-yellow-400">Coaches</a></li>
           <li><a href="#register" className="hover:text-yellow-400">Register Now</a></li>
         </ul>
       </div>

@@ -5,6 +5,10 @@ const images = [
     'image (1).jpg',
     'image (2).jpg',
     'image (3).jpg',
+    'image-n (1).jpg',
+    'image-n (1).PNG',
+    'image-n (2).JPG',
+    'image-n (2).PNG',
 ];
 
 function ImageScroller() {

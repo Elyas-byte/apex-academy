@@ -7,6 +7,7 @@ import RegistrationForm from './components/RegistrationForm';
 import Footer from './components/Footer';
 import BeltJourney from './components/BeltJourney';
 import ImageScroller from './components/Images';
+import Coaches from './components/Coaches';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <AboutSection />
       <BeltJourney />
+      <Coaches />
       <RegistrationForm />
       <ImageScroller />
       <Footer />
