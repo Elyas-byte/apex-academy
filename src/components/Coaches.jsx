@@ -2,10 +2,10 @@ import { useState } from 'react';
 
 const coaches = [
   {
-    name: 'Coach Mishaal Faraaj',
+    name: 'Coach Mishal Alfadhli',
     image: '../mishaal-profile.JPG',
     rank: 'MMA & BJJ Black Belt | Certified MMA Coach',
-    bio: 'Mishaal Faraaj is a lifelong martial artist who began training at the age of seven and went on to compete professionally in MMA from 2014 to 2018. With mastery-level experience in Muay Thai, Wrestling, Boxing, and both Gi and No-Gi Jiu-Jitsu, he holds an MMA and BJJ Gi Black Belt (2020) and has trained under world-class teams including Pancrase London and Team Joker under the mentorship of Jess Liaudin. Alongside his competitive career, Mishaal is a Certified MMA Conditioning Coach (2016) and an experienced educator with a Bachelor’s in Education, teaching Sports Science, Physics, Biology, Chemistry, and Maths. He has coached at institutions such as the Nasser Centre for Science and Technology, Sports Academy in Luton, UK, and now teaches Boxing and MMA in collaboration with Vfitness Gym (Jaww) and Team 4 Fitness (Riffa). Holding CPR, First Aid, Infection Control, Manual Handling, and Retinal Screening certifications, Coach Mishaal ensures his classes are safe, structured, and guided by a deep understanding of both martial arts and teaching methodology.',
+    bio: 'Mishal Alfadhli is a lifelong martial artist who began training at the age of seven and went on to compete professionally in MMA from 2014 to 2018. With mastery-level experience in Muay Thai, Wrestling, Boxing, and both Gi and No-Gi Jiu-Jitsu, he holds an MMA and BJJ Gi Black Belt (2020) and has trained under world-class teams including Pancrase London and Team Joker under the mentorship of Jess Liaudin. Alongside his competitive career, Mishaal is a Certified MMA Conditioning Coach (2016) and an experienced educator with a Bachelor’s in Education, teaching Sports Science, Physics, Biology, Chemistry, and Maths. He has coached at institutions such as the Nasser Centre for Science and Technology, Sports Academy in Luton, UK, and now teaches Boxing and MMA in collaboration with Vfitness Gym (Jaww) and Team 4 Fitness (Riffa). Holding CPR, First Aid, Infection Control, Manual Handling, and Retinal Screening certifications, Coach Mishaal ensures his classes are safe, structured, and guided by a deep understanding of both martial arts and teaching methodology.',
   },
   {
     name: 'Female Coach Coming Soon',
